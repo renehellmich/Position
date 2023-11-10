@@ -1,11 +1,27 @@
+@font-face {
+    font-family: 'Playfair';
+    src: url('../fonts/PlayfairDisplay-Regular.ttf');
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.ttf'); 
+}
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 :root {
-
+    
 }
 html {
-    
+    font-size: 16px;
+}
+
+body {
+    height: 100vh;
+    background: url('../pictures/girl.png') center / cover;
+    background-repeat: no-repeat;
+    position: relative;
 }
