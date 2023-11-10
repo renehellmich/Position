@@ -13,7 +13,7 @@
     box-sizing: border-box;
 }
 :root {
-    
+    --background-color-body: rgb(238, 239, 227);
 }
 html {
     font-size: 16px;
@@ -21,32 +21,70 @@ html {
 
 body {
     height: 100vh;
-    background: url('../pictures/girl.png') center / cover;
-    background-repeat: no-repeat;
-    position: relative;
+    background: var(--background-color-body);
 }
 
-body header {
+body header nav{
     height: 10vh;
-    position: absolute;
+    position: relative;
     top: 0;
 }
 
-body header ul li {
-    display: inline;
+body header nav ul li {
+    display: inline-block;
     padding: 10px;
 }
-body header ul li a {
+body header nav ul li a {
     text-decoration: none;
 }
-body header ul li:first-child a img{
+body header nav ul li:first-child a img{
     border-radius: 50%;
     height: 5vh;
     width: 5vw;
-    /* display: grid;
-    place-items: center; */
+    
 }
 
-body header ul li:last-child {
-    padding-right: 10vw;
+/* body header nav ul li:last-child{
+    right: 0;
+} */
+
+
+main section {
+    text-align: justify;
+}
+
+main section h1 span {
+    font-size: 150%;
+}
+main section h1 {
+    padding-top: 10vh;
+    padding-left: 10vw;
+    height: 10vh;
+    width: 40vw;
+    font-size: 2rem;
+}
+
+main section p {
+    padding-top: 20vh;
+    padding-left: 10vw;
+    height: 10vh;
+    width: 40vw;
+    font-size: 1rem;
+}
+
+main section img {
+    position: absolute;
+    height: 50vh;
+    right: 5vw;
+}
+
+main button {
+    background-color: rgb(241, 176, 38);
+    width: 15vw;
+    height: 5vh;
+    border-radius: 5vh;
+    margin-top: 20vh;
+    left: 15vw;
+    position: relative
+    
 }
